@@ -1,0 +1,14 @@
+function getWeatherIcon(weatherType) {
+  switch (weatherType) {
+    case 'sunny':
+      return '☀️';
+    case 'cloudy':
+      return '☁️';
+    case 'rainy':
+      return '🌧️';
+    case 'stormy':
+      return '⛈️';
+    default:
+      return '🌤️';
+  }
+}
