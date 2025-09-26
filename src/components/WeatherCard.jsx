@@ -77,7 +77,7 @@ function WeatherCard() {
                  <div className="hidden lg:block text-[150px] pt-24 pl-10 sl:text-[120px] sl:pt-36 ">
                 {weatherEmoji(weather)}
                </div>
-              <div className=" flex flex-col pt-36 lg:items-start lg:justify-start lg:w-full lg:max-w-xl xs:pl-7 xss:pl-14 ss:pl-2  ">
+              <div className=" flex flex-col pt-36 lg:items-start lg:justify-start lg:w-full lg:max-w-xl xs:pl-7 xss:pl-16 ss:pl-2  ">
               <h2 className="text-6xl text-align-left mb-4 sl:text-5xl">
                 {" "}
                 {weather.city.name}, {weather.city.country}{" "}
