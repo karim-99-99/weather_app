@@ -77,7 +77,7 @@ function WeatherCard() {
                  <div className="hidden lg:block text-[150px] pt-24 pl-10 sl:text-[120px] sl:pt-36 ">
                 {weatherEmoji(weather)}
                </div>
-              <div className=" flex flex-col pt-36 lg:items-start lg:justify-start lg:w-full lg:max-w-xl xs:pl-10 xss:pl-16 ss:pl-2  ">
+              <div className=" flex flex-col pt-36 lg:items-start lg:justify-start lg:w-full lg:max-w-xl xs:pl-7 xss:pl-14 ss:pl-2  ">
               <h2 className="text-6xl text-align-left mb-4 sl:text-5xl">
                 {" "}
                 {weather.city.name}, {weather.city.country}{" "}
@@ -148,8 +148,8 @@ function WeatherCard() {
             shadow-[inset_10px_80px_70px_rgba(0,255,255,0.1)]
             grid grid-cols-2  sl:w-60 sl:h-60"
             >
-              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold">
-                {weather.list[8].main.temp} °C
+              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold ml-5">
+                {weather.list[8].main.temp.toFixed(1)} °C
               </p>
               <p className="text-7xl -mt-4 lg:text-7xl lg:-mt-4">
                 {weatherEmoji(weather, 8)}{" "}
@@ -175,8 +175,8 @@ function WeatherCard() {
             shadow-[inset_50px_-40px_40px_rgba(0,255,255,0.1)]
             grid grid-cols-2 sl:w-60 sl:h-60"
             >
-              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold">
-                {weather.list[16].main.temp} °C
+              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold ml-5">
+                {weather.list[16].main.temp.toFixed(1)} °C
               </p>
               <p className="text-7xl -mt-4 lg:text-7xl lg:-mt-4">
                 {weatherEmoji(weather, 16)}{" "}
@@ -202,8 +202,8 @@ function WeatherCard() {
             shadow-[inset_50px_-40px_40px_rgba(0,255,255,0.1)]
             grid grid-cols-2 sl:w-60 sl:h-60"
             >
-              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold">
-                {weather.list[24].main.temp} °C
+              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold ml-5">
+                {weather.list[24].main.temp.toFixed(1)} °C
               </p>
               <p className="text-7xl -mt-4 lg:text-7xl lg:-mt-4">
                 {weatherEmoji(weather, 24)}{" "}
@@ -229,8 +229,8 @@ function WeatherCard() {
             shadow-[inset_50px_-40px_40px_rgba(0,255,255,0.1)]
             grid grid-cols-2 sl:w-60 sl:h-60 "
             >
-              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold">
-                {weather.list[32].main.temp} °C
+              <p className="text-3xl mt-2 lg:text-3xl lg:mt-2 font-bold ml-5">
+                {weather.list[32].main.temp.toFixed(1)} °C
               </p>
               <p className="text-7xl -mt-4 lg:text-7xl lg:-mt-4">
                 {weatherEmoji(weather, 32)}{" "}
